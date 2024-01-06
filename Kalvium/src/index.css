@@ -1,0 +1,479 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inika&family=Inter&family=Kotta+One&family=Lato:ital@0;1&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 0 15vh 0 10vh;
+}
+.logo {
+  width: 140px;
+}
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.search-section > img {
+  position: absolute;
+  height: 4.5vh;
+  margin-right: 21vw;
+}
+.searchbar {
+  height: 5.5vh;
+  border: none;
+  outline: none;
+  border-radius: 0.15rem;
+  width: 25vw;
+  border: 1px solid #8b1d1d;
+  text-align: left;
+  padding: 1vh 10vh;
+}
+.register {
+  border-radius: 0.2rem;
+  border: none;
+  padding: 1.7vh 3.5vh;  
+  background: #d84747;
+  box-shadow: 0px 0px 0.5px 0.5px#f7b5b5;
+  color: rgba(255, 255, 255, 0.916);  
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+.main{
+    padding: 5vw 15vw;
+    height: 84vh;
+    /* border: 2px solid red; */
+}
+
+.vector{
+  width: 25vw;
+}
+
+.main-search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.main>div{
+  display: flex;
+  gap: 5vw;
+  width: 100%;
+}
+.main>div>div{
+  display: flex;
+}
+.welcome-text{
+  font-size: 2.3rem;
+  color:#d84747;
+  align-self: center;
+  width: 20vw;
+}
+
+.main-search>input{
+    width: 67vw;
+    height: 11vh;
+    margin-top: -0.7vh;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 50px 2px rgba(78, 77, 77, 0.251);
+    border-radius: 0.6rem;
+    text-align: left;
+    padding-left: 18vh;
+}
+.main-search>input::placeholder{
+    font-size: 1.2rem;
+    color: #e6a3a3;
+}
+
+.SearchButton{
+    position: absolute;
+    right: 17vw;
+    /* top: 0; */
+    color: white;
+    background-color: #d84747;
+    border: none;
+    height: 11vh;
+    width: 12vw;
+    margin-top: -0.7vh;
+    border-radius: 0.6rem;
+    font-size: 1.1rem;
+}
+
+.search-red{
+    width: 6vh;
+    position: absolute;
+    margin-left: 5vh;
+}
+
+.registerMain{
+    display: flex;
+    /* justify-content:center; */
+    gap: 10vw;
+}
+
+.registerMain>img{
+    margin: 2vh 0 0 8vw;
+    height: 80vh;
+}
+
+.form{
+    width: 33vw;
+    height: 80vh;
+    text-align: center;
+    box-shadow: 0 0 20px 2px rgba(111, 111, 111, 0.256);
+    padding: 2.5vh 6vh;
+    /* margin-top: 3vh; */
+
+}
+
+.form>div>h1{
+    font-size: 1.5rem;
+    /* color: #8b1d1d; */
+    color: #d84747;
+    font-weight: 700;
+    font-family: 'Inika', serif;
+    margin:1vh 0;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.input-div{
+  display: flex;
+  flex-direction: column;
+  height: 14vh;
+}
+.success{
+  height: 6.5vh;
+  background-color: rgb(66, 166, 86);
+  width: 100%;
+  padding: 1.2vh 0;
+}
+.success>p{
+  text-align: center;
+  font-size: 1.2rem;
+  /* margin: 1.2vh 0; */
+  color: white;
+}
+
+.sign-in{
+  width: 90px;
+  align-self: center;
+  color: white;
+  background-color: #d84747;
+  border: none;
+  padding: 2vh 4vh;
+  border-radius: 0.2rem;
+  margin-top: 4vh;
+}
+
+
+label{
+  /* color: #3691ca; */
+  /* color: #1E1E1E; */
+  color: #3D769F;
+  font-family: 'Kotta One', serif;
+  margin-top: 2.5vh;
+  margin-bottom: 0.5vh;
+}
+
+.input-field{
+  /* width: 20vw; */
+  border: none;
+  outline: none;
+  padding: 1.5vh 2vh;
+  border-radius: 2vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.err{
+  color:#d84747;
+  text-align: center;
+  margin: 0.8vh 0;
+
+}
+
+.booksDiv{
+  padding: 5vh 8vh;
+  /* border: 2px solid black; */
+  width: 100%;
+}
+
+.searchResult>h1{
+  color:#d84747;
+  text-align: center;
+  /* border: 2px solid pink; */
+
+}
+
+.book-name{
+  /* color: #3D769F; */
+  color: #8341af;
+  font-size: 1.7rem;
+  
+}
+
+.result{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  /* width: 20vw; */
+  gap: 8vh;
+  margin-top: 10vh;
+  /* border: 2px solid red; */
+  width: 100%;
+  
+}
+
+.result-number{
+  color: #55778f;
+}
+
+.inline{
+  display: flex;
+  width: 16vw;
+  justify-content: space-evenly ;
+  color: rgb(65, 147, 130);
+  /* border: 2px solid rgb(0, 255, 68); */
+  width: 100%;
+}
+
+.inline>p{
+  font-size: 1.2rem;
+}
+
+.eachBookDiv{
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  padding: 3vh;
+  width: 100%;
+}
+
+.title{
+  /* border: 2px solid rgb(180, 144, 68); */
+  width: 100%;
+}
+
+.insideDiv{
+  width: 100%;
+
+  /* border: 1px solid blue; */
+}
+
+.insideDiv>img{
+ width: 100%;
+}
+
+.popular{
+  color: #d84747;
+  /* border: 2px solid red; */
+}
+.registerDiv{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+
+@media screen and (max-width: 1440px){
+  .welcome-text{
+    width: 35vw;
+    font-size: 2.4rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px){
+  .welcome-text{
+    width: 35vw;
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 769px){
+
+  .main{
+    margin-top: 12vh;
+  }
+  .welcome-text{
+    width: 45vw;
+    font-size: 1.9rem;
+  }
+  .result{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .insideDiv>img{
+    width: 100%;
+  }
+  .registerMain{
+    gap: 0;
+  }
+  .registerMain>img{
+    width: 38vw;
+  }
+  .form{
+    width: 340px ;
+  }
+
+}
+
+@media screen and (max-width: 426px){
+
+  .main{
+    padding: 15vw 5vw;
+  }
+  .main>div{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .welcome-text{
+    width: 45vw;
+    font-size: 1.4rem;
+  }
+  .nav{
+    padding: 0 5vh;
+  }
+  .vector{
+    width: 40vw;
+  }
+  .main-search>input{
+    width: 100%;
+    height: 9vh;
+  }
+  .SearchButton{
+    width: 18vw;
+    right: 5vw;
+    height: 9vh;
+  }
+  .searchResult>h1{
+    font-size: 1.5rem;
+  }
+  .result{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .insideDiv>img{
+    width: 100%;
+  }
+  .booksDiv{
+    padding: 5vh 4vh;
+  }
+  .registerMain>img{
+    display: none;
+  }
+  .form{
+    width: 320px ;
+    margin: 0 auto;
+    padding: 4vh;
+    margin-top: 2vh;
+    height: 400px;
+
+  }
+  .sign-in{
+    margin-top: 3vh;
+  }
+
+}
+
+@media screen and (max-width: 376px){
+  .main{
+    padding: 15vw 5vw;
+  }
+  .main>div{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .welcome-text{
+    width: 45vw;
+    font-size: 1.3rem;
+  }
+  .main-search>input{
+    width: 100%;
+    height: 9vh;
+  }
+  .SearchButton{
+    width: 18vw;
+    right: 5vw;
+    height: 9vh;
+  }
+  .nav{
+    padding: 0 3vh;
+  }
+  .result{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .insideDiv>img{
+    width: 100%;
+  }
+  .booksDiv{
+    padding: 5vh 12vh;
+  }
+  .form{
+    width: 280px ;
+    margin: 0 auto;
+    padding: 3vh;
+    margin-top: 2vh;
+    /* height: 400px; */
+
+  }
+  .sign-in{
+    margin-top: 3vh;
+  }
+
+
+}
+
+@media screen and (max-width: 321px){
+
+  .main{
+    padding: 18vw 5vw;
+  }
+  .main>div{
+    width: 100%;
+    height: 30vh;
+    justify-content: space-between;
+  }
+  .welcome-text{
+    width: 45vw;
+    font-size: 1.3rem;
+  }
+  .main-search>input{
+    width: 100%;
+    height: 8vh;
+  }
+  .main-search>input::placeholder{
+    font-size: 0.8rem;
+  }
+  .SearchButton{
+    width: 20vw;
+    right: 5vw;
+    height: 8vh;
+    font-size: 0.9rem;
+  }
+  .nav{
+    padding: 0 1vh;
+  }
+  .result{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .insideDiv>img{
+    width: 100%;
+  }
+  .booksDiv{
+    padding: 5vh 8vh;
+  }
+
+
+}
+
